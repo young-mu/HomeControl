@@ -4,6 +4,7 @@ An Android APP which controls Raspiberry Pi 2
 __TODO Features__
 
 * Icon change
+* Show RaspiCam status
 * Support POST method
 * Show countdown when capturing
 * Add a button jumping to Albums
