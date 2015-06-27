@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_raspicam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="@string/text_raspicam"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:padding="10px"
+            android:background="@drawable/parambox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_raspicam_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Resolution" />
+
+            <Spinner
+                android:id="@+id/sp_raspicam_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:padding="10px"
+            android:background="@drawable/parambox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_raspicam_qua"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Quality" />
+
+            <Spinner
+                android:id="@+id/sp_raspicam_qua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:padding="10px"
+            android:background="@drawable/parambox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_raspicam_cod"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Encode" />
+
+            <Spinner
+                android:id="@+id/sp_raspicam_cod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:padding="10px"
+            android:background="@drawable/parambox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_raspicam_flp"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Flip" />
+
+            <Spinner
+                android:id="@+id/sp_raspicam_flp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:padding="10px"
+            android:background="@drawable/parambox"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_raspicam_dly"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Delay" />
+
+            <Spinner
+                android:id="@+id/sp_raspicam_dly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="200px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_raspicam_capt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:textAllCaps="false"
+            android:text="Capture" />
+
+        <Button
+            android:id="@+id/btn_raspicam_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:textAllCaps="false"
+            android:text="Save" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_raspicam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>
